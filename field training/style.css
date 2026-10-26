@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+    --text-color:white;
+    --background:yellow;
+
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    gap: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+nav h1{
+    color: var(--text-color);
+    padding-top: 25px;
+}
+span{
+    color:yellow;
+}
+nav ul{
+display: flex;
+flex-direction: row;
+list-style: none;
+align-items: center;
+gap: 30px;
+}
+nav ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color:var(--background);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+}
+button:hover{
+    background-color:rgb(126, 126, 48) ;
+    color: var(--text-color);
+}
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-content{
+    gap: 30px;
+    text-align: center;
+    border: none;
+}
+p{
+    color: rgb(0, 0, 0);
+    margin:  10px 10px;
+}
+.hero-image img{
+    border-radius: 10px;
+    height: 350px;
+    width: 400px;
+    margin-top: 20px;
+}
+.card-header{
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.card1{
+    width: 400px ;
+    height: 350px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card1 img{
+    height: 50%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.card1 h3{
+    text-align: center;
+    color: black;
+}
+.card1 p{
+    text-align: center;
+}
+.card1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
